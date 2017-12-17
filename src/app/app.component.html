@@ -1,9 +1,30 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1 class="test-class">
-    Welcome to {{title}}!
-  </h1>
+<mat-toolbar color="primary">
+  <span>Ayurveda</span>
+</mat-toolbar>
+<!-- user info -->
+<div>
+  <div *ngIf="afAuth.authState | async; let user; else showLogin">
+    <h6>Hello {{ user.displayName }}!</h6>
+    <button (click)="logout()">Logout</button>
+  </div>
+  <ng-template #showLogin>
+    <p>Please login.</p>
+    <button (click)="login()">Login with Google</button>
+  </ng-template>
 </div>
+<div>
+  <div fxFlexOffset.gt-sm="15%" fxFlex.gt-sm="70%">
+    <p>Container</p>
+    <app-question></app-question>
+    <router-outlet>
+
+    </router-outlet>
+  </div>
+
+</div>
+
+<!-- alerts -->
 <alert type="success">
   <strong>Well done!</strong> You successfully read this important alert message.
 </alert>
