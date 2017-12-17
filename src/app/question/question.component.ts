@@ -12,5 +12,5 @@ export class QuestionComponent {
 
   radioValueChanged(value) {
     this.selectedAnswer = value.value;
-  };
+  }
 }
