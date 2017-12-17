@@ -1,16 +1,16 @@
 import 'hammerjs';
-import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
+import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import { BrowserModule } from '@angular/platform-browser';
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 // ngx bootstrap
 import { AlertModule } from 'ngx-bootstrap';
 // my modules
-import {QuestionModule} from './question/question.module';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+// import { QuestionComponent } from './question/question.component';
 // angular fire
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabase } from 'angularfire2/database';
@@ -20,10 +20,12 @@ import {
   MatButtonModule,
   MatCheckboxModule,
   MatToolbarModule,
-  MatCardModule
+  MatCardModule,
+  MatRadioModule
 } from '@angular/material';
 
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { QuestionComponent } from './question/question.component';
 
 
 const firebaseConfig = {
@@ -37,7 +39,8 @@ const firebaseConfig = {
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    QuestionComponent
   ],
   imports: [
     BrowserModule,
@@ -48,9 +51,10 @@ const firebaseConfig = {
     MatCheckboxModule,
     MatToolbarModule,
     MatCardModule,
+    MatRadioModule,
     BrowserAnimationsModule,
-    FlexLayoutModule,
-    QuestionModule
+    FlexLayoutModule
+    // QuestionComponent
   ],
   providers: [
     AngularFireAuth,

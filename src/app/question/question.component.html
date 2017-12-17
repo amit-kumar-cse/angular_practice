@@ -1,0 +1,17 @@
+<mat-card class='question-card'>
+  <mat-card-header>
+      <mat-card-title class='question'>
+          {{questionData.desc}}
+      </mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+      <mat-radio-group class='answer-options' (change)='radioValueChanged($event)'>
+          <mat-radio-button *ngFor='let answer of questionData.answers' [value]='answer.id' class='answer'>
+              {{answer.desc}}
+          </mat-radio-button>
+      </mat-radio-group>
+      <!-- <div>
+        selected value is {{selectedAnswer}}
+      </div> -->
+  </mat-card-content>
+</mat-card>
