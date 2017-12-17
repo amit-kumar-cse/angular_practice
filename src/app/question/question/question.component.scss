@@ -1,0 +1,26 @@
+.answer-options{
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.question-card{
+    margin: 5px 10px;
+}
+
+mat-radio-button{
+    padding: 3px;
+}
+
+.question{
+    font-size: 15px;
+    font-weight: bold;
+    color: blue;
+}
+
+.answer{
+    font-size: 14px;
+}
+
+mat-card {
+    padding: 20px 20px 15px 25px;
+}
