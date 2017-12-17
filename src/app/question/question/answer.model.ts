@@ -1,4 +1,4 @@
-import { Prakruti } from './prakruti-type';
+import { Prakruti } from './prakruti-type.model';
 
 export class Answer {
     constructor(

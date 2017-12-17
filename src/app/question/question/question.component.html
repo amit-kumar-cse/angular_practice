@@ -1,0 +1,14 @@
+<mat-card>
+    <mat-card-header>
+        <mat-card-title>
+            {{questionData.desc}}
+        </mat-card-title>
+        <mat-card-content>
+            <mat-radio-group>
+                <mat-radio-button *ngFor='let answer of questionData.answers' value='answer.id'>
+                    {{answer.desc}}
+                </mat-radio-button>
+            </mat-radio-group>
+        </mat-card-content>
+    </mat-card-header>
+</mat-card>

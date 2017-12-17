@@ -64,8 +64,7 @@ const firebaseConfig = {
 
 @NgModule({
   declarations: [
-    AppComponent,
-    TestComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,

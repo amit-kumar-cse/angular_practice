@@ -1,4 +1,4 @@
-import { Prakruti } from './prakruti-type';
+import { Prakruti } from './prakruti-type.model';
 import { Answer } from './answer.model';
 import { Question } from './question.model';
 
