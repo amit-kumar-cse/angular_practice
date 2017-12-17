@@ -17,37 +17,10 @@ import { AngularFireDatabase } from 'angularfire2/database';
 import { AngularFireAuth } from 'angularfire2/auth';
 // angular material*
 import {
-  MatAutocompleteModule,
   MatButtonModule,
-  MatButtonToggleModule,
-  MatCardModule,
   MatCheckboxModule,
-  MatChipsModule,
-  MatDatepickerModule,
-  MatDialogModule,
-  MatExpansionModule,
-  MatGridListModule,
-  MatIconModule,
-  MatInputModule,
-  MatListModule,
-  MatMenuModule,
-  MatNativeDateModule,
-  MatPaginatorModule,
-  MatProgressBarModule,
-  MatProgressSpinnerModule,
-  MatRadioModule,
-  MatRippleModule,
-  MatSelectModule,
-  MatSidenavModule,
-  MatSliderModule,
-  MatSlideToggleModule,
-  MatSnackBarModule,
-  MatSortModule,
-  MatTableModule,
-  MatTabsModule,
   MatToolbarModule,
-  MatTooltipModule,
-  MatStepperModule,
+  MatCardModule
 } from '@angular/material';
 
 import { FlexLayoutModule } from '@angular/flex-layout';

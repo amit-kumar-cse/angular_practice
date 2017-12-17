@@ -1,6 +1,6 @@
-import { Prakruti } from './prakruti-type.model';
-import { Answer } from './answer.model';
-import { Question } from './question.model';
+import { Prakruti } from '../model/prakruti-type.model';
+import { Answer } from '../model/answer.model';
+import { Question } from '../model/question.model';
 
 export const questionData = new Question(
     1,
