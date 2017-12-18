@@ -1,8 +1,8 @@
-import { Prakruti } from '../model/prakruti-type.model';
-import { Answer } from '../model/answer.model';
-import { Question } from '../model/question.model';
+import { Prakruti } from '../../model/prakruti-type.model';
+import { Answer } from '../../model/answer.model';
+import { Question } from '../../model/question.model';
 
-export const questionData = new Question(
+export let dailyActivites = new Question(
     1,
     'How you perform your daily activities?',
     [

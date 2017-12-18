@@ -11,8 +11,9 @@ import { element } from 'protractor';
 import { AngularFire } from 'angularfire';
 import { AngularFireDatabase } from 'angularfire2/database';
 
-import { questionData } from './shared/data/question.data';
+import { dailyActivites } from './shared/data/questions/daily-activities.data';
 import { Question } from './shared/model/question.model';
+import { questionList } from './shared/data/questions-list.data';
 
 @Component({
   selector: 'app-root',
@@ -23,8 +24,10 @@ export class AppComponent {
   isConnected: any;
   title = 'app';
   questionData: Question;
+  questionList: Question[];
   constructor(public afAuth: AngularFireAuth, public afDb: AngularFireDatabase) {
-    this.questionData = questionData;
+    this.questionData = dailyActivites;
+    this.questionList = questionList;
     const observable = afDb.object(`connected`).valueChanges();
     observable
       // .take(1)
